@@ -1,0 +1,61 @@
+.wrapper{
+    display: flex;
+    gap:10px;
+}
+.current-place{
+    position: relative;
+    width:100%;
+    height: 100vh;
+
+}
+.current-img{
+    
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+.image-title{
+    position: absolute;
+    background-color: rgb(216, 130, 130);
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 10%;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.image-desc {
+    position: absolute;
+    background-color: rgb(196, 72, 72);
+    color: rgb(255, 255, 255);
+    right: 27%;
+    left: 33%;
+    text-align: center;
+    top: 65%;
+    padding: 20px 27px;
+    border-radius: 32px;
+}
+.all-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.all-imgs img{
+    border-radius: 30px;
+    width: 200px;
+    height: 20vh;
+    object-fit: cover;
+    cursor: pointer;
+   
+    
+}
+.animate-imgs{
+    opacity: 0.5;
+    transform: translate(10px,0);
+    animation: animate-imgs 0.5s ease-in-out forwards;
+}
+@keyframes animate-imgs{
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
